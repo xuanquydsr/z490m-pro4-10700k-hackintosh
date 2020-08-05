@@ -16,6 +16,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-UIAC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC-USBX.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-PLUG.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -37,14 +53,6 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PMCR.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-EC-USBX.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-EC-USBX.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -57,7 +65,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>oAqTU1RBUwE=</data>
 				<key>Limit</key>
@@ -199,8 +207,6 @@
 			<false/>
 			<key>SyncRuntimePermissions</key>
 			<true/>
-			<key>ProvideMaxSlide</key>
-			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -228,7 +234,7 @@
 				<key>ATY,EFIVersion</key>
 				<string>01.01.190</string>
 				<key>ATY,FamilyName</key>
-				<string>Radeon Pro</string>
+				<string>Radeon</string>
 				<key>ATY,Rom#</key>
 				<string>113-D3220E-190</string>
 				<key>CAIL_EnableLBPWSupport</key>
@@ -488,6 +494,22 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>USBInjectAll.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/USBInjectAll</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>FakePCIID.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -520,27 +542,11 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>USBMap.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>RadeonBoost.kext</string>
 				<key>Comment</key>
 				<string>Boost the performance of AMD GPUs</string>
-				<key>Disable</key>
-				<true/>
+				<key>Enabled</key>
+				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -565,9 +571,9 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -635,6 +641,8 @@
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
+			<key>SerialInit</key>
+			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -780,7 +788,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02851301CDJG361H</string>
+			<string>BUI XUAN QUY</string>
 			<key>ROM</key>
 			<data>eNVHuya5</data>
 			<key>SpoofVendor</key>
@@ -788,9 +796,9 @@
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XVGZLHX87</string>
+			<string>BUI XUAN QUY</string>
 			<key>SystemUUID</key>
-			<string>CCE90789-81B9-47E7-9579-5A1CD9EBBAAD</string>
+			<string>BUI XUAN QUY</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -801,7 +809,7 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f//f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>MLBNUMBER</string>
+			<string>BUI XUAN QUY</string>
 			<key>ROM</key>
 			<data>eNVHuya5</data>
 		</dict>
@@ -820,6 +828,8 @@
 		<dict>
 			<key>EnableJumpstart</key>
 			<true/>
+			<key>GlobalConnect</key>
+			<false/>
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
@@ -828,8 +838,6 @@
 			<integer>0</integer>
 			<key>MinVersion</key>
 			<integer>0</integer>
-			<key>GlobalConnect</key>
-			<false/>
 		</dict>
 		<key>Audio</key>
 		<dict>
@@ -911,6 +919,8 @@
 			<false/>
 			<key>AppleEvent</key>
 			<false/>
+			<key>AppleFramebufferInfo</key>
+			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
 			<key>AppleKeyMap</key>
@@ -932,8 +942,6 @@
 			<key>OSInfo</key>
 			<false/>
 			<key>UnicodeCollation</key>
-			<false/>
-			<key>AppleFramebufferInfo</key>
 			<false/>
 		</dict>
 		<key>Quirks</key>
