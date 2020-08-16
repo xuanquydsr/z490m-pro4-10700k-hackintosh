@@ -1,4 +1,4 @@
-# BigSur 11 Beta 3 OpenCore
+# BigSur 11 Beta 4 OpenCore iMac20,1
 Can be used for Catalina
 
 ![alt text](https://i.imgur.com/wqgeiG6.png)
@@ -10,7 +10,7 @@ Can be used for Catalina
 - Ethernet: Intel I219-V
 - Ram: 16GB
 - GPU: RX 5600 XT
-- USB Bluetooth
+- BCM94360CS2 + Adapter M.2 Key E
 - SSD 970 Evo Plus
 
 # Working
@@ -18,7 +18,18 @@ Can be used for Catalina
 - Shutdown
 - Restart
 - Audio/Mic
+- Audio HDMI
 - Bluetooth
+- Filevault
+- Wifi
+- USB map
 - GPU RX 5600 XT (Use kext or ssdt)
 
-# Benchmarks (Update)
+# Credits
+
+Thanks for your support :) Your help was crucial for my build.
+- [SchmockLord](https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D)
+- [dortania](https://github.com/dortania)
+
+
+

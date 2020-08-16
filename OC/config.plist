@@ -404,7 +404,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>USBInjectAll_v0.7.5_FixUSB3.2-MPG Z490 GAMING CARBON WiFi 2.kext</string>
+				<string>USBInjectAll_v0.7.5_Fix.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
