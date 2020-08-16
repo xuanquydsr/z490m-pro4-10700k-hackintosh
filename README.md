@@ -22,6 +22,7 @@ Can be used for Catalina
 - Bluetooth
 - Filevault
 - Wifi
+- AirDrop
 - USB map
 - GPU RX 5600 XT (Use kext or ssdt)
 
