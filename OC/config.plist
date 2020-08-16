@@ -20,11 +20,27 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-UIAC.aml</string>
+				<string>SSDT-DTPG.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>SSDT-PLUG.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PLUG.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-RX 5700 XT-Version 1.0.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-RX 5700 XT-Version 1.0.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-EC-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,27 +48,35 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PLUG.aml</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
+				<string>SSDT-USBW.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-RX 5700 XT-Version 1.0.aml</string>
+				<string>SSDT-PM.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-RX 5700 XT-Version 1.0.aml</string>
+				<string>SSDT-PM.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PMCR.aml</string>
+				<string>SSDT-SBUS-MCHC.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PMCR.aml</string>
+				<string>SSDT-SBUS-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-UIAC.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-UIAC.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -65,7 +89,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>oAqTU1RBUwE=</data>
 				<key>Limit</key>
@@ -91,7 +115,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>SF9FQw==</data>
 				<key>Limit</key>
@@ -213,6 +237,26 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>device-id</key>
+				<data>cKEAAA==</data>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-2</string>
+				<key>layout-id</key>
+				<data>AQAAAA==</data>
+				<key>model</key>
+				<string>Realtek ALC1200</string>
+			</dict>
+			<key>PciRoot(0x32)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>shikigva</key>
+				<integer>80</integer>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>@0,name</key>
@@ -230,11 +274,11 @@
 				<key>ATY,Copyright</key>
 				<string>Copyright AMD Inc. All Rights Reserved. 2005-2019</string>
 				<key>ATY,DeviceName</key>
-				<string>RX 5600 XT</string>
+				<string>W5700X</string>
 				<key>ATY,EFIVersion</key>
 				<string>01.01.190</string>
 				<key>ATY,FamilyName</key>
-				<string>Radeon</string>
+				<string>Radeon Pro</string>
 				<key>ATY,Rom#</key>
 				<string>113-D3220E-190</string>
 				<key>CAIL_EnableLBPWSupport</key>
@@ -304,41 +348,19 @@
 				<key>hda-gfx</key>
 				<string>onboard-2</string>
 				<key>model</key>
-				<string>Radeon RX 5600 XT</string>
+				<string>Radeon Pro W5700X</string>
 				<key>name</key>
 				<string>ATY_GPU</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,31,3</string>
-				<key>device-id</key>
-				<data>cKEAAA==</data>
-				<key>device_type</key>
-				<string>Audio device</string>
-				<key>hda-gfx</key>
-				<string>onboard-2</string>
-				<key>layout-id</key>
-				<data>AQAAAA==</data>
-				<key>model</key>
-				<string>Realtek ALC1200</string>
+				<key>acpi-wake-type</key>
+				<data>AQ==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AwCSPg==</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,2,0</string>
-				<key>device-id</key>
-				<data>mD4AAA==</data>
-				<key>device_type</key>
-				<string>Display controller</string>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>model</key>
-				<string>Intel UHD Graphics 630</string>
+				<data>AwDImw==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -357,6 +379,54 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>USBWakeFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/USBWakeFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>USBInjectAll_v0.7.5_FixUSB3.2-MPG Z490 GAMING CARBON WiFi 2.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/USBInjectAll</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>DAGPM.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -389,22 +459,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>IntelMausi.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IntelMausi</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -478,38 +532,6 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>DAGPM.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>USBInjectAll.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBInjectAll</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>FakePCIID.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -542,13 +564,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>RadeonBoost.kext</string>
+				<string>IntelMausiEthernet.kext</string>
 				<key>Comment</key>
-				<string>Boost the performance of AMD GPUs</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
 				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IntelMausiEthernet</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -567,7 +589,36 @@
 			<data>/////wAAAAAAAAAAAAAAAA==</data>
 		</dict>
 		<key>Patch</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>F1 patch fix</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>dTMPtw==</data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleRTC</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>Replace</key>
+				<data>6zMPtw==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -737,11 +788,13 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>agdpmod=pikera -v keepsyms=1 shikigva=80 debug=0x100</string>
+				<string>agdpmod=pikera -no_compat_check keepsyms=1 debug=0x100</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
+				<key>run-efi-updater</key>
+				<data>AA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -788,28 +841,28 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>BUI XUAN QUY</string>
+			<string>C02020303GU000A8</string>
 			<key>ROM</key>
 			<data>eNVHuya5</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
+			<string>iMac20,1</string>
 			<key>SystemSerialNumber</key>
-			<string>BUI XUAN QUY</string>
+			<string>C02CQ0J2PN5T</string>
 			<key>SystemUUID</key>
-			<string>BUI XUAN QUY</string>
+			<string>A67A7712-97D4-4CCC-A6AD-9D3BB54C2BBD</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
 			<key>BID</key>
-			<string>Mac-AA95B1DDAB278B95</string>
+			<string>Mac-CFF7D910A743CAAF</string>
 			<key>FirmwareFeatures</key>
 			<data>dvWP/QAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
 			<data>f//f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>BUI XUAN QUY</string>
+			<string>C02020303GU000A8</string>
 			<key>ROM</key>
 			<data>eNVHuya5</data>
 		</dict>
