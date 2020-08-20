@@ -1,4 +1,4 @@
-# BigSur 11 Beta 4 OpenCore iMac20,1
+# BigSur 11 Beta 5 OpenCore iMac20,1
 Can be used for Catalina
 
 ![alt text](https://i.imgur.com/wqgeiG6.png)
