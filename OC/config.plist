@@ -34,7 +34,7 @@
 				<key>Comment</key>
 				<string>SSDT-RX 5700 XT-Version 1.0.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-RX 5700 XT-Version 1.0.aml</string>
 			</dict>
@@ -111,37 +111,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Rename H_EC to EC (Embedded Controller)</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>SF9FQw==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>RUNfXw==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>RUNfXw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Rename PEGP to EGP0 (Graphics)</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>UEVHUA==</data>
 				<key>Limit</key>
@@ -159,7 +133,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>RUdQMA==</data>
+				<data>RFNEVA==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -239,23 +213,8 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,31,3</string>
-				<key>device-id</key>
-				<data>cKEAAA==</data>
-				<key>device_type</key>
-				<string>Audio device</string>
-				<key>hda-gfx</key>
-				<string>onboard-2</string>
 				<key>layout-id</key>
 				<data>AQAAAA==</data>
-				<key>model</key>
-				<string>Realtek ALC1200</string>
-			</dict>
-			<key>PciRoot(0x32)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>shikigva</key>
-				<integer>80</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
 			<dict>
@@ -274,11 +233,11 @@
 				<key>ATY,Copyright</key>
 				<string>Copyright AMD Inc. All Rights Reserved. 2005-2019</string>
 				<key>ATY,DeviceName</key>
-				<string>W5700X</string>
+				<string>RX 5600 XT</string>
 				<key>ATY,EFIVersion</key>
 				<string>01.01.190</string>
 				<key>ATY,FamilyName</key>
-				<string>Radeon Pro</string>
+				<string>Radeon RX</string>
 				<key>ATY,Rom#</key>
 				<string>113-D3220E-190</string>
 				<key>CAIL_EnableLBPWSupport</key>
@@ -348,19 +307,11 @@
 				<key>hda-gfx</key>
 				<string>onboard-2</string>
 				<key>model</key>
-				<string>Radeon Pro W5700X</string>
+				<string>Radeon RX 5600 XT</string>
 				<key>name</key>
 				<string>ATY_GPU</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
-			<dict>
-				<key>acpi-wake-type</key>
-				<data>AQ==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>AwDImw==</data>
+				<key>shikigva</key>
+				<integer>80</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -404,6 +355,22 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>RadeonBoost.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>USBInjectAll_v0.7.5_Fix.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -424,7 +391,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -532,38 +499,6 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>FakePCIID.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/FakePCIID</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>FakePCIID_Intel_HDMI_Audio.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>IntelMausiEthernet.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -584,9 +519,9 @@
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
-			<data>6wYIAAAAAAAAAAAAAAAAAA==</data>
+			<data></data>
 			<key>Cpuid1Mask</key>
-			<data>/////wAAAAAAAAAAAAAAAA==</data>
+			<data></data>
 		</dict>
 		<key>Patch</key>
 		<array>
@@ -790,11 +725,11 @@
 				<key>boot-args</key>
 				<string>agdpmod=pikera keepsyms=1 debug=0x100</string>
 				<key>csr-active-config</key>
-				<data>5wMAAA==</data>
+				<data>ZwAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
 				<key>run-efi-updater</key>
-				<data>AA==</data>
+				<data>Tm8=</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -841,30 +776,30 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02020303GU000A8</string>
+			<string>C02745404QXJG36FB</string>
 			<key>ROM</key>
-			<data>eNVHuya5</data>
+			<data>Z0SJO6Bu</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMac20,1</string>
+			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02CQ0J2PN5T</string>
+			<string>C02VNLY4HX87</string>
 			<key>SystemUUID</key>
-			<string>A67A7712-97D4-4CCC-A6AD-9D3BB54C2BBD</string>
+			<string>81D67005-AF65-402D-826A-1DE2413D4475</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
 			<key>BID</key>
-			<string>Mac-CFF7D910A743CAAF</string>
+			<string>Mac-7BA5B2D9E42DDD94</string>
 			<key>FirmwareFeatures</key>
-			<data>dvWP/QAAAAA=</data>
+			<data>PvWP/QAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
-			<data>f//f/wAAAAA=</data>
+			<data>P/+f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02020303GU000A8</string>
+			<string>C02745404QXJG36FB</string>
 			<key>ROM</key>
-			<data>eNVHuya5</data>
+			<data>Z0SJO6Bu</data>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
