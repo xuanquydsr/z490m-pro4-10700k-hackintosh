@@ -26,6 +26,7 @@ Can be used for Catalina
 - USB map
 - GPU RX 5600 XT (Use kext or ssdt)
 - Messages/FaceTime
+- Fake Retina
 
 # Credits
 
