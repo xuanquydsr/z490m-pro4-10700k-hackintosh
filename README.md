@@ -1,14 +1,14 @@
-# BigSur 11 Beta 5 OpenCore iMac20,1
+# BigSur 11 20B50 OpenCore iMac20,1
 Can be used for Catalina
 
-![alt text](https://i.imgur.com/wqgeiG6.png)
+![alt text](https://i.imgur.com/MvtzUNy.jpg)
 
 # Hardware
 - Intel i7-10700k
 - Asrock z490m Pro4m
 - Audio: Realtek ALC1200
 - Ethernet: Intel I219-V
-- Ram: 16GB
+- Ram: 32GB
 - GPU: RX 5600 XT
 - BCM94360CS2 + Adapter M.2 Key E
 - SSD 970 Evo Plus
