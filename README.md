@@ -25,6 +25,7 @@ Can be used for Catalina
 - AirDrop
 - USB map
 - GPU RX 5600 XT (Use kext or ssdt)
+- Messages/FaceTime
 
 # Credits
 
