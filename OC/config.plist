@@ -16,14 +16,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-DTPG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-PLUG.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -32,55 +24,56 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-RX 5700 XT-Version 1.0.aml</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-RX 5700 XT-Version 1.0.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-EC-USBX.aml</string>
+				<string>SSDT-PM.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EC-USBX.aml</string>
+				<string>SSDT-PM.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>SSDT-SBUS-MCHC.aml</string>
+				<key>Path</key>
+				<string>SSDT-SBUS-MCHC.aml</string>
 				<key>Enabled</key>
 				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-UIAC.aml</string>
+				<key>Path</key>
+				<string>SSDT-UIAC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-USBW.aml</string>
 				<key>Path</key>
 				<string>SSDT-USBW.aml</string>
+				<key>Enabled</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PM.aml</string>
+				<string>SSDT-EC-USBX.aml</string>
+				<key>Path</key>
+				<string>SSDT-EC-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>SSDT-PM.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-SBUS-MCHC.aml</string>
+				<string>SSDT-RX 5600 XT.aml</string>
+				<key>Path</key>
+				<string>SSDT-RX 5600 XT.aml</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>SSDT-SBUS-MCHC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-UIAC.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-UIAC.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
-		<array/>
+		<array>
+		</array>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -89,7 +82,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>oAqTU1RBUwE=</data>
 				<key>Limit</key>
@@ -205,6 +198,8 @@
 			<false/>
 			<key>SyncRuntimePermissions</key>
 			<true/>
+			<key>ProvideMaxSlide</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -216,102 +211,23 @@
 				<key>layout-id</key>
 				<data>AQAAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
-				<key>@0,name</key>
-				<string>ATY,Adder</string>
-				<key>@1,name</key>
-				<string>ATY,Adder</string>
-				<key>@2,name</key>
-				<string>ATY,Adder</string>
-				<key>@3,name</key>
-				<string>ATY,Adder</string>
-				<key>AAPL00,DualLink</key>
-				<data>AQAAAA==</data>
-				<key>ATY,Card#</key>
-				<string>102-D32200-00</string>
-				<key>ATY,Copyright</key>
-				<string>Copyright AMD Inc. All Rights Reserved. 2005-2019</string>
-				<key>ATY,DeviceName</key>
-				<string>RX 5600 XT</string>
-				<key>ATY,EFIVersion</key>
-				<string>01.01.190</string>
-				<key>ATY,FamilyName</key>
-				<string>Radeon RX</string>
-				<key>ATY,Rom#</key>
-				<string>113-D3220E-190</string>
-				<key>CAIL_EnableLBPWSupport</key>
-				<integer>0</integer>
-				<key>CAIL_EnableMaxPlayloadSizeSync</key>
-				<integer>1</integer>
-				<key>CFG_CAA</key>
-				<integer>0</integer>
-				<key>CFG_FB_LIMIT</key>
-				<integer>0</integer>
-				<key>CFG_FORCE_MAX_DPS</key>
-				<integer>1</integer>
-				<key>CFG_GEN_FLAGS</key>
-				<integer>0</integer>
-				<key>CFG_NO_MST</key>
-				<integer>0</integer>
-				<key>CFG_NVV</key>
-				<integer>2</integer>
-				<key>CFG_PAA</key>
-				<integer>0</integer>
-				<key>CFG_PULSE_INT</key>
-				<integer>1</integer>
-				<key>CFG_TPS1S</key>
-				<integer>1</integer>
-				<key>CFG_TRANS_WSRV</key>
-				<integer>1</integer>
-				<key>CFG_UFL_CHK</key>
-				<integer>0</integer>
-				<key>CFG_UFL_STP</key>
-				<integer>0</integer>
-				<key>CFG_USE_AGDC</key>
-				<integer>1</integer>
-				<key>CFG_USE_CP2</key>
-				<integer>1</integer>
-				<key>CFG_USE_CPSTATUS</key>
-				<integer>1</integer>
-				<key>CFG_USE_DPT</key>
-				<integer>1</integer>
-				<key>CFG_USE_FBC</key>
-				<integer>0</integer>
-				<key>CFG_USE_FBWRKLP</key>
-				<integer>1</integer>
-				<key>CFG_USE_FEDS</key>
-				<integer>1</integer>
-				<key>CFG_USE_LPT</key>
-				<integer>1</integer>
-				<key>CFG_USE_PSR</key>
-				<integer>0</integer>
-				<key>CFG_USE_SCANOUT</key>
-				<integer>1</integer>
-				<key>CFG_USE_SRRB</key>
-				<integer>0</integer>
-				<key>CFG_USE_STUTTER</key>
-				<integer>1</integer>
-				<key>CFG_USE_TCON</key>
-				<integer>1</integer>
-				<key>PP_DisableDIDT</key>
-				<integer>1</integer>
-				<key>PP_DisablePowerContainment</key>
-				<integer>1</integer>
-				<key>PP_DisableVoltageIsland</key>
-				<integer>0</integer>
-				<key>PP_FuzzyFanControl</key>
-				<integer>1</integer>
+				<key>acpi-wake-type</key>
+				<data>AQ==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AwDImw==</data>
+				<key>device-id</key>
+				<data>kj4AAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
 				<key>device_type</key>
-				<string>ATY,AdderParent</string>
-				<key>hda-gfx</key>
-				<string>onboard-2</string>
+				<string>Display Controller</string>
 				<key>model</key>
-				<string>Radeon RX 5600 XT</string>
-				<key>name</key>
-				<string>ATY_GPU</string>
-				<key>shikigva</key>
-				<integer>80</integer>
+				<string>Intel UHD 630</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -356,38 +272,6 @@
 			<dict>
 				<key>BundlePath</key>
 				<string>RadeonBoost.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>USBInjectAll_v0.7.5_Fix.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBInjectAll</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>DAGPM.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -513,15 +397,54 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/USBInjectAll</string>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>USBInjectAll.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>DAGPM.kext</string>
+			</dict>
 		</array>
 		<key>Block</key>
-		<array/>
+		<array>
+		</array>
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
 			<data></data>
 			<key>Cpuid1Mask</key>
 			<data></data>
+			<key>DummyPowerManagement</key>
+			<false/>
 		</dict>
 		<key>Patch</key>
 		<array>
@@ -570,8 +493,6 @@
 			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
-			<key>DummyPowerManagement</key>
-			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
@@ -586,12 +507,17 @@
 			<false/>
 			<key>XhciPortLimit</key>
 			<true/>
+			<key>LegacyCommpage</key>
+			<false/>
+			<key>ForceSecureBootScheme</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array/>
+		<array>
+		</array>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -605,7 +531,7 @@
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -669,6 +595,12 @@
 			<integer>0</integer>
 			<key>Vault</key>
 			<string>Optional</string>
+			<key>ApECID</key>
+			<integer>0</integer>
+			<key>DmgLoading</key>
+			<string>Signed</string>
+			<key>EnablePassword</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -723,7 +655,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>agdpmod=pikera keepsyms=1 debug=0x100</string>
+				<string>keepsyms=1 debug=0x100 agdpmod=pikera</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -776,17 +708,19 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02745404QXJG36FB</string>
+			<string>BUI XUAN QUY</string>
 			<key>ROM</key>
 			<data>Z0SJO6Bu</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
+			<string>iMac20,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02VNLY4HX87</string>
+			<string>BUI XUAN QUY</string>
 			<key>SystemUUID</key>
-			<string>81D67005-AF65-402D-826A-1DE2413D4475</string>
+			<string>BUI XUAN QUY</string>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -838,11 +772,11 @@
 			<key>AudioSupport</key>
 			<true/>
 			<key>MinimumVolume</key>
-			<integer>50</integer>
+			<integer>20</integer>
 			<key>PlayChime</key>
 			<true/>
 			<key>VolumeAmplifier</key>
-			<integer>120</integer>
+			<integer>143</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
@@ -850,6 +784,8 @@
 		<array>
 			<string>HFSPlus.efi</string>
 			<string>OpenRuntime.efi</string>
+			<string>AudioDxe.efi</string>
+			<string>OpenCanopy.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -896,6 +832,8 @@
 			<string>BuiltinGraphics</string>
 			<key>UgaPassThrough</key>
 			<false/>
+			<key>ForceResolution</key>
+			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -931,6 +869,10 @@
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
+			<key>AppleImg4Verification</key>
+			<false/>
+			<key>AppleSecureBoot</key>
+			<false/>
 		</dict>
 		<key>Quirks</key>
 		<dict>
@@ -950,7 +892,8 @@
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array/>
+		<array>
+		</array>
 	</dict>
 </dict>
 </plist>
